@@ -1,6 +1,6 @@
-puts "Введите основание треугольника?"
-base = gets.chomp
-puts "Введите высоту треугольника?"
-height = gets.chomp
-area = 0.5*base.to_f*height.to_f
+puts "Введите основание треугольника"
+base = gets.chomp.to_f
+puts "Введите высоту треугольника"
+height = gets.chomp.to_f
+area = 0.5 * base * height
 puts "Площадь треугольника #{area}"

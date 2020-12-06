@@ -11,12 +11,16 @@ sides << gets.chomp.to_i
 
 sides.sort!
 
-if sides[0]**2 + sides[1]**2 == sides[2]**2
+side1 = sides[0]
+side2 = sides[1]
+hypotenuse = sides[2]
+
+if side1 ** 2 + side2 ** 2 == hypotenuse ** 2
   puts "Треугольник прямоугольный"
 end
 
-if sides[0] == sides[1] && sides[1] == sides[2]
+if side1 == side2 && side2 == hypotenuse
   puts "Треугольник равнобедренный и равносторонний"
-elsif sides[0] == sides[1] || sides[0] == sides[2] || sides[1] == sides[2]
+elsif side1 == side2 || side1 == hypotenuse || side2 == hypotenuse
   puts "Треугольник равнобедренный"
 end
